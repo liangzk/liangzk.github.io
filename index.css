@@ -416,3 +416,17 @@ box-shadow: 5px 5px 2px #888;
 
 li {padding:10px;}
 ul { font-weight: bolder; }
+
+.wrap {
+   width:90%;
+   margin:0 auto;
+}
+.left_col {
+   float:left;
+   width:20%;
+}
+.mid_col {
+   float:right;
+   width:75%;
+}
+
