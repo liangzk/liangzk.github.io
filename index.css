@@ -183,7 +183,7 @@ width:100%;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right:2px;
   float: left;
   /* background-color: #ffefcf; */
@@ -426,6 +426,11 @@ ul { font-weight: bolder; }
    float:left;
    width:20%;
 }
+
+.left_col .box {
+  padding-top: 15px;
+}
+
 .mid_col {
    float:right;
    width:75%;
