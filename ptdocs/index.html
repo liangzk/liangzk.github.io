@@ -43,49 +43,51 @@ Singapore, 117417
 	Thank you for taking your valuable time to look at my promotion and tenure documents. 
 
 	This is a short summary of my achievements in research, teaching, and service. My full CV is <a href="cv-liangzk.pdf">here</a>. If you have suggestions or need more specific information, please email me. I greatly appreciate it. </p>
-    <p><em><strong>Research Summary</strong></em>: I established the system security research group in NUS School of Computing, and advanced research in areas of web and browser security, software component isolation, software debugging and vulnerability diagnosis. My research has been supported by funding of over S$1.9 million (S$1.2 million as PI). I have been publishing my research results in top security and software engineering conferences and journals, such as IEEE Security and Privacy, ACM CCS, USENIX Security Symposium, NDSS, ESORICS, ACSAC, ACM FSE, ACM TISSEC, ACM TOSEM, and IEEE TDSC.  I have graduated four research Master students and two Ph.D. students. Another Ph.D. student will defend his thesis in summer of 2013. </p>
+    <p><em><strong>Research Summary</strong></em>: I established the system security research group in NUS School of Computing, and advanced research in areas of web and browser security, software component isolation, software debugging and vulnerability diagnosis. I have been publishing my research results in top security and software engineering conferences and journals, such as IEEE Security and Privacy, ACM CCS, USENIX Security Symposium, NDSS, ESORICS, ACSAC, ACM FSE, ACM TISSEC, ACM TOSEM, and IEEE TDSC. My research has been supported by funding of over S$1.9 million (S$1.2 million as PI).  I have graduated two Ph.D. students and four research Master students. Another Ph.D. student has submitted his thesis for examination. </p>
     <dl>
-      <dt><em><strong>Teaching Summary</strong></em>: During the past five years, I created a new course, CS4238 <em>Computer Security Practice</em> (Undergraduate), and completely redeveloped the contents of two security courses, CS3235 <em>Introduction to Computer Security</em> (Undergraduate) and CS5231 <em>Systems Security</em> (Graduate). I have been practicing a new teaching method of bringing system security practice in class instruction. My courses and teaching method are well received by students (4.5 out of 5 by student evaluation in recent semesters). I also helped to develop security contents in a few undergraduate courses. </dt>
+      <dt><em><strong>Teaching Summary</strong></em>: During the past five years, I created two new courses, CS4238 <em>Computer Security Practice</em> (Undergraduate) and CS5231 <em>Systems Security</em> (Graduate), and completely redeveloped the contents of the course CS3235 <em>Introduction to Computer Security</em> (Undergraduate). I have been practicing a teaching methodology of motivating students through practice. My courses and teaching method are recognized by students (4.5 out of 5 by student evaluation in recent semesters). I also helped to develop security contents in a few undergraduate courses. </dt>
       </dl>
-    <p><em><strong>Service Summary</strong></em>: I have served as the TPC member of several conferences and workshops, including WWW 2011, NDSS 2013, NDSS 2014. I have served as a member of the editorial board of the <em>International Journal of Security and Networks (IJSN)</em> since July 2011. I have been the reviewer of a few major conference and journals, including ACM TISSEC, IEEE TDSC, etc. For university services, I have been a member of the Graduate Study (Admission) Committee of NUS School of Computing. I have been maintaining active connections with Singapore's government divisions, research labs, and companies related to cyber security. I am actively driving the effort to establish a platform in Singapore for academia, government, and companies to collaborate to facilitate research and education of cyber security. </p>
+    <p><em><strong>Service Summary</strong></em>: I have contributed to the research community as the TPC member of a number of conferences and workshops, including WWW 2011, NDSS 2013, NDSS 2014. I have served as a member of the editorial board of the <em>International Journal of Security and Networks (IJSN)</em> since July 2011.  For university services, I have been a member of the Graduate Study (Admission) Committee of NUS School of Computing. I have been maintaining active connections with Singapore's government divisions, research labs, and companies related to cyber security. I am actively driving the effort to establish a platform in Singapore for academia, government, and companies to collaborate to facilitate research and education of cyber security. </p>
 <h2>RESEARCH    </h2>
-    <p>Execution environments are the center of computing platforms, such as traditional operating systems, web platforms, and mobile systems. My research has focused on securing execution environments through introducing new security primitives and developing new techniques for debugging and attack diagnosis. </p>
-    <p>For new security primitives, I developed techniques to transparently isolate untrusted programs in Linux systems [5], and techniques to confine untrusted JavaScript in the browser environment [4]. From such experiences, I rethink the way binary components work in a program, and designed solutions to isolate untrusted program components to prevent backdoors [3] and unexpected side-effects in system and memory [2]. </p>
-    <p>For debugging and attack diagnosis, I analyzed recent advanced memory-error exploits and created techniques to diagnose and classify them through a type system on binaries [7]. To efficiently discover software errors and debug such errors, I developed solutions to systematically detect errors [9] and debug errors [8] using symbolic execution on binaries. </p>
+    <p><strong>My research aims at ensuring cyber environments free of malicious activities through principled schemes</strong>. A typical cyber environment consists of two parts, the <em>runtime platform</em> (e.g., the Windows Operating System, or the browser platform) and the <em>executables</em> (e.g., software programs, mobile Apps, or JavaScript libraries) running on top of the platform. My research drives security innovations in both parts of cyber environments, specifically, <em>designing new security primitives</em> for runtime platforms, and <em>developing new analysis methods</em> to prevent attacks exploiting vulnerabilities in executables. </p>
+    <p>For new security primitives in runtime platforms, I have been investigating security primitives that guarantee the computation of executables is free of unexpected results. Specifically, my research in this direction focuses on the following aspects:  </p>
+    <ul>
+      <ul>
+        <li>In a cyber environment, what is the uniqueness in its runtime platform and what are the appropriate primitives to eliminate unexpected results?  </li>
+        <li>By reflecting on the experience in designing security primitives in one platform, what can we learn from them to improve security of other platforms?  </li>
+      </ul>
+    </ul>
+    <p>For new methods of analyzing executables, I aim to develop methods for accurate analysis, which can significantly improve the capability for attack response and prevention. Specifically, I advance my research in this area from the following perspectives: </p>
+    <ul>
+      <ul>
+        <li>(<em>Diagnosis</em>) When an attack is detected, how to efficiently and accurately identify the key characteristics of the attack? </li>
+        <li>(<em>Mitigation</em>) With the attack characteristics, how to promptly prevent ongoing attacks to minimize their impact? </li>
+        <li>(<em>Prevention</em>) How to identify and fix software vulnerabilities through accurate analysis of programs?    </li>
+      </ul>
+    </ul>
     <h3>Representative papers. (<a href="http://www.comp.nus.edu.sg/~liangzk/publications.html"><u>Full List</u></a>)</h3>
-    <h4>New Security Primitives in Execution Environments</h4>
+    <h4>New Security Primitives in Runtime Platforms.</h4>
     <ul>
       <li><strong>[1] A Quantitative Evaluation of Privilege Separation in Web Browser Designs</strong>. <br />
       	Xinshu Dong, Hong Hu, Prateek Saxena, and Zhenkai Liang. <br />
         In <em>the 18th European Symposium on Research in Computer Security (ESORICS)</em>, 2013.</li>
-      <li><strong>[2] Codejail: Application-transparent Isolation of Libraries with Tight Program Interactions</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/esorics12.pdf">PDF</a>]<br />
-        Yongzheng Wu, Sai Sathyanarayan, Roland Yap, and Zhenkai Liang. <br />
-        In <em>the 17th European Symposium on Research in Computer Security (ESORICS)</em>, 2012.</li>
-      <li><strong>[3] A Framework to Eliminate Backdoors from Response Computable Authentication</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/ieee12.pdf">PDF</a>]<br />
+      <li><strong>[2] A Framework to Eliminate Backdoors from Response Computable Authentication</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/ieee12.pdf">PDF</a>]<br />
         Shuaifu Dai, Tao Wei, Chao Zhang, Tielei Wang, Yu Ding, Zhenkai Liang, and Wei Zou. <br />
         In <em>the IEEE Symposium on Security and Privacy</em>, 2012.</li>
-      <li><strong>[4] Towards Fine-Grained Access Control in JavaScript Contexts</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/icdcs11.pdf">PDF</a>]<br />
+      <li><strong>[3] Towards Fine-Grained Access Control in JavaScript Contexts</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/icdcs11.pdf">PDF</a>]<br />
         Kailas Patil, Xinshu Dong, Xiaolei Li, Zhenkai Liang, and Xuxian Jiang.<br />
         In <em>the 31st IEEE International Conference on Distributed Computing Systems (ICDCS)</em>,  2011.</li>
-      <li><strong>[5] Alcatraz: An Isolated Environment for Experimenting with Untrusted Software</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/tissec09.pdf">PDF</a>]<br />
-        Zhenkai Liang, Weiqing Sun, R.Sekar, and V.N. Venkatakrishnan.<br />
-        In <em>ACM Transactions on Information and System Security (TISSEC)</em>, Volume 12, Issue 3, January 2009. </li>
     </ul>
-    <h4>Software Error/Vulnerability Detection and Debugging</h4>
-<ul>
-  <li><strong>[6] </strong><strong>SafeStack: Automatically Patching Stack-based Buffer Overflow Vulnerabilities. <br />
-    </strong>Gang Chen, Hai Jin, Deqing Zou, Bing Bing Zhou, Zhenkai Liang, Weide Zheng, and Xuanhua Shi. <br />
-      To appear in <em>IEEE Transactions on Dependable and Secure Computing</em> (TDSC), (Accepted as of May 2013). <strong><br />
-  </strong></li>
-  <li><strong>[7] Identifying and Analyzing Pointer Misuses for Sophisticated Memory-corruption Exploit Diagnosis</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/ndss12.pdf">PDF</a>]<br />
+    <h4>New Analysis Methods. 
+      <strong><br />
+      </strong></h4>
+    <ul>
+  <li><strong>[4] Identifying and Analyzing Pointer Misuses for Sophisticated Memory-corruption Exploit Diagnosis</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/ndss12.pdf">PDF</a>]<br />
     Mingwei Zhang, Aravind Prakash, Xiaolei Li, Zhenkai Liang, and Heng Yin.<br />
     In <em>the 19th Annual Network &amp; Distributed System Security Symposium (NDSS)</em>, 2012.</li>
-  <li><strong>[8] DARWIN: An Approach for Debugging Evolving Programs</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/fse09.pdf">PDF</a>]<strong><br />
+  <li><strong>[5] DARWIN: An Approach for Debugging Evolving Programs</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/fse09.pdf">PDF</a>]<strong><br />
     </strong>Dawei Qi, Abhik Roychoudhury, Zhenkai Liang, Kapil Vaswani.<br />
     In <em>the ESEC and ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC-FSE</em>), 2009. <strong>(Distinguished paper award)</strong></li>
-  <li><strong>[9] Towards Automatic Discovery of Deviations in Binary Implementations with Applications to Error Detection and Fingerprint Generation</strong>. [<a href="http://www.comp.nus.edu.sg/~liangzk/papers/sec07.pdf">PDF</a>]<br />
-    David Brumley, Juan Caballero, Zhenkai Liang, James Newsome, and Dawn Song.<br />
-    In <em>the 16th USENIX Security Symposium</em>, 2007. <strong>(Best paper award</strong><strong>)</strong></li>
 </ul>
 <h3>Research awards. </h3>
       <ul>
@@ -95,7 +97,7 @@ Singapore, 117417
         <li>Outstanding Paper Award, the 19th Annual Computer Security Applications Conference (ACSAC), 2003. </li>
       </ul>
 <h3>Funding.</h3>
-<p>My research has been generously supported by fundings from Singapore Ministry of Education (MOE), Ministry of Defense (MINDEF), and NUS through the following projects (project value not including indirect overhead). </p>
+<p>My research has been generously supported by fundings from Singapore Ministry of Education (MOE), Ministry of Defense (MINDEF), and NUS through the following projects. </p>
       <ul>
         <li>(PI) <em>Establishing Trusted Web Sessions on Untrusted User Devices</em>. (MOE) AcRF Tier-2, S$383,452, April 2013 – March 2016.</li>
         <li>(PI) <em>Securing the Android Mobile Platform against Browser-based Attacks</em>. (MOE) FRC, S$152,000, August 2011 – August 2014.</li>
@@ -105,9 +107,10 @@ Singapore, 117417
         <li>(PI) <em>Improving Security Incident Response by Automatic Vulnerability Diagnosis</em>. (MOE) FRC, S$167,880, October 2008 – September 2011.    </li>
       </ul>
       <h2>TEACHING</h2>
-    <p>I lead the effort of redesigning the system security curriculum in NUS. I created the undergraduate CS4238 <em>Computer Security Practice</em>, to train the system security skills of senior undergraduate students (<a href="http://www.comp.nus.edu.sg/~liangzk/cs4238/lecturesummary.html">Sample Syllabus</a>). To support the instruction of this module, I designed the layout and networking of a new teaching lab, supporting 40 students (10 project groups).</p>
-    <p>I also redeveloped the undergraduate course CS3235 (Introduction to Computer Security), shifting its focus from coding theory and cryptography to overall security (including basic cryptography, software security, system security, network security, and web security). I also redesigned the graduate course CS5231, from <em>Cryptographic techniques &amp; Data Security</em> to<em> Systems Security</em>.    </p>
-    <p>I have been practicing a new method of teaching security principles through practice.  I designed a series of live demos in class, showing students complex concepts like buffer overflow attacks and rootkit analysis. I also distribute virtual machines and external hard drives to students for them to study security tools. The method is effective in motivating students to see security principles in detailed system knowledge. </p>
+    <p>For the past five years in NUS, I actively participated in building and restructuring the cyber security curriculum. In particular, I led the effort of creating and redesigning courses in system security. Before I joined the department, existing security courses focused on cryptography and network security. From 2008, I created or redeveloped a series of courses. Specifically, I have created two new courses, and redevelop the syllabus of another course. </p>
+<p>I created a new undergraduate course, CS4238 <em>Computer Security Practice (<a href="http://www.comp.nus.edu.sg/~liangzk/cs4238/lecturesummary.html">Sample Syllabus</a>)</em>, to train the system security skills of senior undergraduate students, preparing them for a system security career. To support the instruction of this course, I designed the layout and networking of a new teaching lab, supporting 40 students (10 project groups). I also created a new course, CS5231 Systems Security. It focuses on system security knowledge and skills, as well as latest developments in system security research. </p>
+<p>I also redeveloped the undergraduate course CS3235 (Introduction to Computer Security), shifting its focus from coding theory and cryptography to general computer security (including basic cryptography, software security, system security, network security, and web security).</p>
+    <p>I have been practicing a new method of teaching security principles through practice.  I designed a series of live demos in class, showing students complex concepts like buffer overflow attacks and rootkit analysis. I also distribute virtual machines and external hard drives to students for them to study security tools. The method is effective in motivating students to see the connections between security knowledge and real-world problems. </p>
     <p>Here are sample results of my recent teaching feedback from students. </p>
     <table width="683" height="145" border="1">
       <tr>
@@ -147,6 +150,12 @@ Singapore, 117417
   </tr>
 </table>
 <h3>Graduated students</h3>
+<p>Ph.D. Students. </p>
+<ul>
+  <li>Dawei Qi (Co-advise), 2013</li>
+  <li>Xinshu Dong, 2013. </li>
+  <li>Kailas Patil, 2013. (Expected, dissertation submitted)</li>
+</ul>
 <p>Master Students (by research).</p>
 <ul>
   <li>Zhengheng Goh, 2010.</li>
@@ -154,12 +163,7 @@ Singapore, 117417
   <li>Mingwei Zhang, 2013.</li>
   <li>Edwin Lee, 2013.</li>
 </ul>
-<p>Ph.D. Students. </p>
-<ul>
-  <li>Dawei Qi (Co-advise), 2013</li>
-  <li>Xinshu Dong, 2013. </li>
-  <li>Kailas Patil, 2013. (Expected, dissertation submitted)</li>
-</ul>
+<p>&nbsp;</p>
 <h2>SERVICE</h2>
 <h3>Selected Services for Research Community. </h3>
 <ul>
