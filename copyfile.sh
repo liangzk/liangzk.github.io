@@ -1,4 +1,4 @@
-for i in . research publication teaching cv hobby
+for i in . research publication teaching cv hobby sitemap
 do
   echo cp ../zhenkai-liang.github.io/_site/$i/index.html $i/index.html
   cp ../zhenkai-liang.github.io/_site/$i/index.html $i/index.html
